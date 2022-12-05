@@ -1,16 +1,11 @@
+import Search from '../components/Search';
+import Sidebar from '../components/Sidebar';
+
 export function Index(props) {
   return (
-    <div>
-      <div className="wrapper">
-        <div className="container">
-          <div id="welcome">
-            <h1>
-              <span> Hello there, </span>
-              Welcome web {props.user.username}
-            </h1>
-          </div>
-        </div>
-      </div>
+    <div className="flex flex-col bg-gray-100 overflow-y-auto">
+      <Search />
+      <Sidebar />
     </div>
   );
 }
